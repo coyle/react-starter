@@ -1,0 +1,9 @@
+<%- include ./_header.ejs %>
+
+  <% if (locals.html) { %>
+      <div id="app"><%-html-%></div>
+  <% } else { %>
+    <div id="app"></div>
+  <% } %>
+
+<%- include ./_footer.ejs %>

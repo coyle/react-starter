@@ -1,0 +1,18 @@
+<% if (locals.localData) { %>
+<script id="localdata">
+  var
+    yy = window.yy || {};
+
+  yy = <%- JSON.stringify(localData) %>;
+</script>
+<% } %>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAWCn2tAOblCURytL0yx9xvSfGTe19qok"></script>
+
+<% if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') { %>
+  <script async src="/js/app.bundle.min.3344bf42.js"></script>
+<% } else { %>
+  <script async src="/js/app.bundle.js"></script>
+<% } %>
+</body>
+</html>

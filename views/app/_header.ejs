@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Yik Yak</title>
+    <meta name="description" content="">
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <!-- colors the chrome top bar -->
+    <meta name="theme-color" content="#0dd5b2">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <% if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') { %>
+      <link rel="stylesheet" href="/css/app.min.c163e1ee.css">
+    <% } else { %>
+      <link rel="stylesheet" href="/css/app.css">
+    <% } %>
+  </head>
+  <body>
